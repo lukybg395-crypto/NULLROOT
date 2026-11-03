@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Fichier & URL (VirusTotal) | NULLROOT</title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .logo:hover {
+            color: #3fb950;
+        }
+        .back-link {
+            color: #8b949e;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            color: #58a6ff;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .meta-tag {
+            display: inline-block;
+            background: rgba(63, 185, 80, 0.1);
+            color: #3fb950;
+            border: 1px solid #3fb950;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 25px;
+        }
+        .content-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .content-box h2 {
+            color: #bc8cff;
+            font-size: 1.2rem;
+            margin-top: 0;
+            border-left: 3px solid #bc8cff;
+            padding-left: 10px;
+        }
+        p, li {
+            color: #c9d1d9;
+            font-size: 0.95rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background: #21262d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff7b72;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">NULLROOT_</a>
+            <a href="index.html" class="back-link">← Retour à l'accueil</a>
+        </header>
+
+        <h1>Analyse Fichier & URL (VirusTotal)</h1>
+        <div class="meta-tag">Tutoriel Cybersécurité</div>
+
+        <div class="content-box">
+            <h2>1. C'est quoi VirusTotal ?</h2>
+            <p>VirusTotal est un service en ligne gratuit qui analyse des fichiers et des URL suspectes à la recherche de types de virus, vers, trojans et autres formes de malwares grâce à plus de 70 moteurs antivirus différents.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>2. Comment l'utiliser en sécurité ?</h2>
+            <ul>
+                <li>Rends-toi sur le site officiel de VirusTotal.</li>
+                <li>Sélectionne l'onglet <strong>File</strong> (pour un fichier) ou <strong>URL</strong> (pour un lien web).</li>
+                <li>Glisse ton fichier ou colle le lien. L'analyse se lance instantanément.</li>
+                <li>Si un ou deux moteurs signalent un faux positif (alerte mineure), pas de panique. Si une grande majorité le détecte, supprime immédiatement le fichier.</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>3. Bon réflexe</h2>
+            <p>Ne télécharge jamais un exécutable louche juste pour "tester" si ton antivirus réagit. Passe toujours par une analyse de hachage ou une sandbox (bac à sable) si tu veux creuser.</p>
+        </div>
+    </div>
+
+</body>
+</html>
