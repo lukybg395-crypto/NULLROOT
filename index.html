@@ -3,116 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NULLROOT | Cyber, Gaming & Tech Hub</title>
-    <style>
-        body {
-            font-family: monospace, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #58a6ff;
-        }
-        nav a {
-            color: #8b949e;
-            text-decoration: none;
-            margin-left: 15px;
-        }
-        nav a:hover {
-            color: #3fb950;
-        }
-        .hero {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-        .hero h1 {
-            color: #58a6ff;
-            margin-top: 0;
-            font-size: 1.8rem;
-        }
-        .section-title {
-            color: #bc8cff;
-            font-size: 1.2rem;
-            margin: 30px 0 15px 0;
-            border-left: 3px solid #bc8cff;
-            padding-left: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            padding: 20px;
-        }
-        .card h3 {
-            color: #ffffff;
-            margin-top: 0;
-        }
-        .btn {
-            display: inline-block;
-            background: #21262d;
-            color: #58a6ff;
-            border: 1px solid #30363d;
-            padding: 6px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background: #58a6ff;
-            color: #ffffff;
-        }
-    </style>
+    <title>NULLROOT — Cyber, Gaming & Tech Performance</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <header>
-            <div class="logo">NULLROOT_</div>
+            <a href="index.html" class="logo">NULLROOT_</a>
             <nav>
-                <a href="#cyber">Cyber</a>
+                <a href="#cyber">Cybersécurité</a>
                 <a href="#gaming">Gaming</a>
-                <a href="#raccourcis">Raccourcis</a>
+                <a href="#pc">Optimisation PC</a>
+                <a href="#pro" class="nav-btn">Espace VIP / Pro</a>
             </nav>
         </header>
 
-        <div class="hero">
-            <h1>Documentation & Base de Connaissances</h1>
-            <p>Guide de cybersécurité, optimisations système et astuces tech.</p>
+        <section class="hero">
+            <span class="hero-badge">⚡ Hub Tech & Sécurité Spécialisé</span>
+            <h1>Maîtrisez votre environnement numérique.</h1>
+            <p>Guides de cybersécurité pas à pas, optimisations système avancées et ressources dédiées pour gamers et passionnés d'informatique.</p>
+            
+            <div class="features-summary">
+                <div class="feature-pill">
+                    <h4>🛡️ SecOps & Analyse</h4>
+                    <p>Détectez les menaces et sécurisez vos machines.</p>
+                </div>
+                <div class="feature-pill">
+                    <h4>🎮 Performance Pure</h4>
+                    <p>Optimisez vos FPS et réduisez la latence sans fioritures.</p>
+                </div>
+                <div class="feature-pill">
+                    <h4>⚡ Fast Workflow</h4>
+                    <p>Raccourcis et outils pour booster votre productivité.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-header">
+            <h2 class="section-title" id="cyber">Derniers Guides & Tutoriels</h2>
+            <p class="section-desc">Des contenus clairs, structurés et directement applicables.</p>
         </div>
 
-        <h2 class="section-title" id="cyber">// Cybersécurité</h2>
         <div class="grid">
+            <!-- Carte 1 : Cyber -->
             <div class="card">
-                <h3>Analyse Fichier (VirusTotal)</h3>
-                <p>Scanner instantanément un fichier suspect via 70+ moteurs antivirus.</p>
-                <a href="cyber-virustotal.html" class="btn">Lire le guide →</a>
+                <div class="card-banner card-banner-cyber"></div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Cybersécurité</span>
+                        <h3>Analyse de Fichiers avec VirusTotal</h3>
+                        <p>Apprenez à interpréter les rapports d'analyse, repérer les faux positifs et auditer vos logiciels suspects en toute sécurité.</p>
+                    </div>
+                    <a href="cyber-virustotal.html" class="btn">Consulter le dossier →</a>
+                </div>
+            </div>
+
+            <!-- Carte 2 : Gaming -->
+            <div class="card">
+                <div class="card-banner card-banner-gaming"></div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Gaming & Optimization</span>
+                        <h3>Optimiser Windows pour le Fast-FPS</h3>
+                        <p>Réduction de l'input lag, configuration souris et réglages système pour une fluidité maximale sur vos jeux de précision.</p>
+                    </div>
+                    <a href="#" class="btn">Prochainement →</a>
+                </div>
+            </div>
+
+            <!-- Carte 3 : Raccourcis -->
+            <div class="card">
+                <div class="card-banner card-banner-shortcut"></div>
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Productivité</span>
+                        <h3>Cheat-Sheet Raccourcis Avancés</h3>
+                        <p>Les commandes indispensables et raccourcis clavier pour naviguer comme un pro sur Windows et Linux.</p>
+                    </div>
+                    <a href="#" class="btn">Prochainement →</a>
+                </div>
             </div>
         </div>
+
+        <footer>
+            <p>© 2026 NULLROOT. Tous droits réservés. Construit pour la performance et la sécurité.</p>
+        </footer>
     </div>
 
 </body>
