@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimisation Système & Boost FPS — NULLROOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">NULLROOT_</a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="index.html#cyber">Guides</a>
+                <a href="index.html#recommandations">Recommandations</a>
+                <a href="#" class="nav-btn">⭐ Favori</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <span class="hero-badge">🎮 Gaming & Tuning Performance</span>
+            <h1>Optimisation Système & Maximisation des FPS</h1>
+            <p>Réduisez l'input lag, éliminez les micro-saccades et configurez Windows pour tirer le maximum de votre matériel en jeu.</p>
+        </section>
+
+        <!-- Guide Principal -->
+        <div class="grid" style="grid-template-columns: 1fr;">
+            <div class="card" style="padding: 10px;">
+                <div class="card-body">
+                    <span class="card-tag">Guide Optimisation</span>
+                    <h3>1. Activer le Mode Jeu & Planification GPU (HAGS)</h3>
+                    <p>
+                        Windows intègre des options natives efficaces pour prioriser les jeux vidéo :<br><br>
+                        • <strong>Mode Jeu :</strong> Allez dans <em>Paramètres > Jeux > Mode Jeu</em> et activez-le. Il empêche Windows Update d'exécuter des mises à jour en arrière-plan pendant vos sessions.<br>
+                        • <strong>HAGS (Hardware-Accelerated GPU Scheduling) :</strong> Tapez <em>Paramètres graphiques</em> dans le menu Démarrer et activez la planification de processeur graphique à accélération matérielle. Redémarrez ensuite votre PC.
+                    </p>
+                    
+                    <h3 style="margin-top: 25px;">2. Nettoyage des Processus en Arrière-plan</h3>
+                    <p>
+                        Chaque application qui tourne en arrière-plan consomme du processeur et de la RAM. Désactivez le lancement automatique des logiciels inutiles dans le <strong>Gestionnaire des tâches (Ctrl + Shift + Echap) > onglet Applications au démarrage</strong> (Discord, Spotify, Steam, Epic Games, etc.).
+                    </p>
+
+                    <h3 style="margin-top: 25px;">3. Optimisation du Panneau de Configuration GPU</h3>
+                    <p>
+                        Que vous soyez sur Nvidia ou AMD, adaptez ces paramètres globaux :<br>
+                        • <strong>Mode de gestion de l'alimentation :</strong> Privilégier les performances maximales.<br>
+                        • <strong>Mode Faible Latence (Nvidia Reflex / Anti-Lag) :</strong> Activez-le sur "On" ou "Ultra" pour réduire le temps de réponse entre vos clics et l'affichage à l'écran.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Outillage -->
+        <div class="section-header">
+            <h2 class="section-title">Outils Recommandés pour la Performance</h2>
+            <p class="section-desc">Des utilitaires indispensables pour surveiller et maintenir votre PC au sommet.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Clean Install GPU</span>
+                        <h3>DDU (Display Driver Uninstaller)</h3>
+                        <p>L'outil ultime pour supprimer proprement vos anciens pilotes graphiques avant une réinstallation propre.</p>
+                    </div>
+                    <a href="https://www.wagnardsoft.com/" target="_blank" class="btn">Télécharger DDU ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Monitoring & Stats</span>
+                        <h3>MSI Afterburner & RivaTuner</h3>
+                        <p>Affichez la température, l'utilisation GPU/CPU et le framerate précis en temps réel dans vos jeux.</p>
+                    </div>
+                    <a href="https://www.msi.com/Landing/afterburner/graphics-cards" target="_blank" class="btn">Voir l'outil ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Contrôle Latence</span>
+                        <h3>LatencyMon</h3>
+                        <p>Analyse si les pilotes de votre système causent des micro-coupures de son ou du stutting en jeu.</p>
+                    </div>
+                    <a href="https://www.resplendence.com/latencymon" target="_blank" class="btn">Tester LatencyMon ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Recommandations & Hardware (Affiliation) -->
+        <div class="section-header">
+            <h2 class="section-title">Matériel & Équipement Gaming</h2>
+            <p class="section-desc">Sélection de composants et périphériques optimisés pour la compétition.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">⚡ Stockage Fast NVMe</span>
+                        <h3>SSD NVMe PCIe 4.0 (Samsung / WD Black)</h3>
+                        <p>Réduisez à zéro les temps de chargement en jeu et accélérez la réactivité globale de votre Windows.</p>
+                    </div>
+                    <a href="#" class="btn" style="background: var(--accent-indigo);">Voir les composants recommandés →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">🖱️ Périphériques Haute Précision</span>
+                        <h3>Souris Ultralight & Claviers Rapid Trigger</h3>
+                        <p>Les meilleurs périphériques du moment pour maximiser votre visée et votre temps de réaction.</p>
+                    </div>
+                    <a href="#" class="btn" style="background: var(--accent-indigo);">Voir la sélection gamer →</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 NULLROOT. Tous droits réservés. Construit pour la performance et la sécurité.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
