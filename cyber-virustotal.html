@@ -3,120 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analyse Fichier & URL (VirusTotal) | NULLROOT</title>
-    <style>
-        body {
-            font-family: monospace, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #58a6ff;
-            text-decoration: none;
-        }
-        .logo:hover {
-            color: #3fb950;
-        }
-        .back-link {
-            color: #8b949e;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        .back-link:hover {
-            color: #58a6ff;
-        }
-        h1 {
-            color: #58a6ff;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .meta-tag {
-            display: inline-block;
-            background: rgba(63, 185, 80, 0.1);
-            color: #3fb950;
-            border: 1px solid #3fb950;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-bottom: 25px;
-        }
-        .content-box {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            padding: 25px;
-            margin-bottom: 20px;
-        }
-        .content-box h2 {
-            color: #bc8cff;
-            font-size: 1.2rem;
-            margin-top: 0;
-            border-left: 3px solid #bc8cff;
-            padding-left: 10px;
-        }
-        p, li {
-            color: #c9d1d9;
-            font-size: 0.95rem;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        code {
-            background: #21262d;
-            padding: 2px 6px;
-            border-radius: 4px;
-            color: #ff7b72;
-            font-family: monospace;
-        }
-    </style>
+    <title>Analyse de Fichiers avec VirusTotal — NULLROOT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <header>
             <a href="index.html" class="logo">NULLROOT_</a>
-            <a href="index.html" class="back-link">← Retour à l'accueil</a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="index.html#cyber">Cybersécurité</a>
+                <a href="index.html#recommandations">Recommandations</a>
+                <a href="#" class="nav-btn">⭐ Favori</a>
+            </nav>
         </header>
 
-        <h1>Analyse Fichier & URL (VirusTotal)</h1>
-        <div class="meta-tag">Tutoriel Cybersécurité</div>
+        <section class="hero">
+            <span class="hero-badge">🛡️ SecOps & Audit de Menaces</span>
+            <h1>Analyse Complète de Fichiers avec VirusTotal</h1>
+            <p>Apprenez à auditer vos fichiers suspects, détecter les malwares sophistiqués et interpréter les rapports d'analyse sans tomber dans le piège des faux positifs.</p>
+        </section>
 
-        <div class="content-box">
-            <h2>1. C'est quoi VirusTotal ?</h2>
-            <p>VirusTotal est un service en ligne gratuit qui analyse des fichiers et des URL suspectes à la recherche de types de virus, vers, trojans et autres formes de malwares grâce à plus de 70 moteurs antivirus différents.</p>
+        <!-- Guide Principal -->
+        <div class="grid" style="grid-template-columns: 1fr;">
+            <div class="card" style="padding: 10px;">
+                <div class="card-body">
+                    <span class="card-tag">Guide Officiel</span>
+                    <h3>1. Qu'est-ce que VirusTotal ?</h3>
+                    <p>VirusTotal est un service gratuit filiale de Google qui analyse les fichiers et les URL suspectes à l'aide de plus de 70 moteurs antivirus (Kaspersky, Bitdefender, CrowdStrike, Microsoft Defender, etc.) et d'outils d'extraction dynamique.</p>
+                    
+                    <h3 style="margin-top: 25px;">2. Comment effectuer une analyse efficace ?</h3>
+                    <p>
+                        <strong>Étape A — L'envoi du fichier :</strong> Rendez-vous sur VirusTotal.com et glissez votre fichier (limite de 650 Mo). Pour les fichiers très lourds, privilégiez la recherche par signature <em>SHA-256</em>.<br><br>
+                        <strong>Étape B — L'interprétation du score :</strong> Un score de <code>0/72</code> garantit un fichier sain pour la quasi-totalité des moteurs. Si un score affiche <code>1/72</code> ou <code>2/72</code> avec des noms génériques (ex: <em>Unsafe.Heur.PUA</em>), il s'agit très probablement d'un <strong>faux positif</strong> (souvent déclenché par des cracks, des scripts d'automatisation ou des logiciels non signés).<br><br>
+                        <strong>Étape C — L'onglet "Behavior" (Comportement) :</strong> Vérifiez quelles clés de registre le fichier tente de modifier et s'il essaie d'établir une connexion réseau vers une IP suspecte.
+                    </p>
+
+                    <h3 style="margin-top: 25px;">3. Les Réflexes de Sécurité</h3>
+                    <p>Ne téléversez jamais de documents contenant des données personnelles confidentielles (mots de passe, fiches de paie, clés privées), car les fichiers soumis à VirusTotal sont partagés avec la communauté des chercheurs en cybersécurité.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="content-box">
-            <h2>2. Comment l'utiliser en sécurité ?</h2>
-            <ul>
-                <li>Rends-toi sur le site officiel de VirusTotal.</li>
-                <li>Sélectionne l'onglet <strong>File</strong> (pour un fichier) ou <strong>URL</strong> (pour un lien web).</li>
-                <li>Glisse ton fichier ou colle le lien. L'analyse se lance instantanément.</li>
-                <li>Si un ou deux moteurs signalent un faux positif (alerte mineure), pas de panique. Si une grande majorité le détecte, supprime immédiatement le fichier.</li>
-            </ul>
+        <!-- Section Alternatives -->
+        <div class="section-header">
+            <h2 class="section-title">Solutions Alternatives & Sandboxes</h2>
+            <p class="section-desc">Des outils complémentaires pour analyser le comportement des fichiers en temps réel.</p>
         </div>
 
-        <div class="content-box">
-            <h2>3. Bon réflexe</h2>
-            <p>Ne télécharge jamais un exécutable louche juste pour "tester" si ton antivirus réagit. Passe toujours par une analyse de hachage ou une sandbox (bac à sable) si tu veux creuser.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Sandbox Interactive</span>
+                        <h3>ANY.RUN</h3>
+                        <p>Permet d'exécuter un fichier dans une machine virtuelle en ligne et de regarder en direct ce que fait le malware sur le système.</p>
+                    </div>
+                    <a href="https://any.run" target="_blank" class="btn">Tester ANY.RUN ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Analyse Avancée</span>
+                        <h3>Hybrid Analysis</h3>
+                        <p>Outil puissant d'analyse statique et dynamique fournissant des rapports détaillés basés sur la technologie Falcon Sandbox.</p>
+                    </div>
+                    <a href="https://www.hybrid-analysis.com" target="_blank" class="btn">Voir Hybrid Analysis ↗</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">Cloud Sandbox</span>
+                        <h3>Tria.ge</h3>
+                        <p>Une plateforme moderne d'analyse de malwares particulièrement efficace pour extraire les configurations des trojans récents.</p>
+                    </div>
+                    <a href="https://tria.ge" target="_blank" class="btn">Explorer Tria.ge ↗</a>
+                </div>
+            </div>
         </div>
+
+        <!-- Section Recommandations & Partenaires (Affiliation) -->
+        <div class="section-header">
+            <h2 class="section-title">Recommandations de Sécurité NULLROOT</h2>
+            <p class="section-desc">Les outils essentiels pour protéger votre système au quotidien.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">🔒 Protection Mots de Passe</span>
+                        <h3>Bitwarden / NordPass</h3>
+                        <p>Ne réutilisez plus jamais le même mot de passe. Utilisez un coffre-fort chiffré de bout en bout pour protéger vos accès.</p>
+                    </div>
+                    <a href="#" class="btn" style="background: var(--accent-indigo);">Découvrir l'offre partenaire →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <span class="card-tag">🌐 Chiffrement & Réseau</span>
+                        <h3>ProtonVPN / NordVPN</h3>
+                        <p>Masquez votre adresse IP et sécurisez vos connexions sur les réseaux Wi-Fi publics ou en déplacement.</p>
+                    </div>
+                    <a href="#" class="btn" style="background: var(--accent-indigo);">Découvrir l'offre partenaire →</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 NULLROOT. Tous droits réservés. Construit pour la performance et la sécurité.</p>
+        </footer>
     </div>
 
 </body>
